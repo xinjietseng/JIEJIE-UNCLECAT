@@ -133,7 +133,7 @@ export const MERCH_DATA: MerchItem[] = [
     title: '「阿猩健身系列」限量公益盲盒公仔',
     priceTWD: 350,
     priceHKD: 90,
-    imageUrl: 'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?auto=format&fit=crop&w=400&q=80',
+    imageUrl: 'https://lh3.googleusercontent.com/d/1uH8xx5SzfsCeo63FANjuGH4VG1pA8igw',
     description: '與 World Gym 聯名的限量實體盲盒。精緻樹脂材質，高約 8cm，全套共 5 款 + 1 款隱藏版（金色槓鈴阿猩）。每一隻都散發著濃濃的搞笑汗水味。',
     tags: ['公仔', '盲盒', '公益']
   }
