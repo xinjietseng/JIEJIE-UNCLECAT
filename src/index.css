@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", "Noto Sans TC", serif;
+  --font-serif: "Playfair Display", "Noto Sans TC", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-yellow: #E4E4E0;
+  --color-brand-neon: #DCDCD8;
+  --color-brand-pink: #1A1A1A;
+  --color-brand-orange: #7F7F7A;
+  --color-bg-dark: #F5F5F0;
+  --color-card-dark: #FFFFFF;
+}
+
+/* Base body style for Editorial Aesthetic */
+body {
+  background-color: #F5F5F0 !important;
+  color: #1A1A1A !important;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Selection style */
+::selection {
+  background-color: #1A1A1A !important;
+  color: #F5F5F0 !important;
+}
+
+/* Custom global styles for editorial scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border: 1px solid #F5F5F0;
+  border-radius: 0px; /* Sharp corners for editorial look */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7F7F7A;
+}
+
+/* Force light paper background & dark text for section and card containers */
+.bg-bg-dark {
+  background-color: #F5F5F0 !important;
+  color: #1A1A1A !important;
+}
+
+.bg-card-dark {
+  background-color: #FFFFFF !important;
+  color: #1A1A1A !important;
+}
+
+/* Overriding colors to guarantee readable dark-ink typography on light paper */
+.bg-bg-dark .text-white,
+.bg-bg-dark .text-zinc-100,
+.bg-bg-dark .text-gray-100,
+.bg-bg-dark .text-zinc-200,
+.bg-bg-dark .text-gray-200,
+.bg-bg-dark h1,
+.bg-bg-dark h2,
+.bg-bg-dark h3,
+.bg-bg-dark h4,
+.bg-card-dark .text-white,
+.bg-card-dark .text-zinc-100,
+.bg-card-dark .text-gray-100,
+.bg-card-dark .text-zinc-200,
+.bg-card-dark .text-gray-200,
+.bg-card-dark h1,
+.bg-card-dark h2,
+.bg-card-dark h3,
+.bg-card-dark h4 {
+  color: #1A1A1A !important;
+}
+
+/* Ensure descriptive muted text has correct ink-based tone instead of glowing white/grey */
+.text-gray-300,
+.text-gray-400,
+.text-gray-500,
+.text-zinc-300,
+.text-zinc-400,
+.text-zinc-500 {
+  color: rgba(26, 26, 26, 0.75) !important;
+}
+
+.text-gray-600,
+.text-zinc-600 {
+  color: rgba(26, 26, 26, 0.85) !important;
+}
+
+/* Redefine borders as crisp solid ink borders */
+.border,
+.border-2,
+.border-3,
+.border-t,
+.border-b,
+.border-l,
+.border-r,
+.border-t-2,
+.border-b-2 {
+  border-color: #1A1A1A !important;
+}
+
+.border-white\/5,
+.border-white\/10,
+.border-white\/20,
+.border-white\/30,
+.border-zinc-800,
+.border-zinc-700,
+.border-zinc-600,
+.border-brand-yellow\/30,
+.border-brand-pink\/50 {
+  border-color: rgba(26, 26, 26, 0.15) !important;
+}
+
+/* Editorial Style shadow utility - solid sharp dark ink shadows */
+.brutalist-shadow-yellow,
+.brutalist-shadow-pink,
+.brutalist-shadow-neon,
+.brutalist-shadow-white,
+.brutalist-shadow-dark {
+  box-shadow: 4px 4px 0px 0px #1A1A1A !important;
+}
+
+/* Interactive elements animations in editorial theme */
+.hover-brutalist:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #1A1A1A !important;
+}
+.active-brutalist:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px 0px #1A1A1A !important;
+}
+
+/* Vertical text helper for Editorial layout tags */
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Editorial layout line height */
+.leading-tightest {
+  line-height: 0.85;
+}
+
+/* Let's redefine brand background styles */
+.bg-brand-pink {
+  background-color: #1A1A1A !important;
+  color: #F5F5F0 !important;
+}
+.text-brand-pink {
+  color: #1A1A1A !important;
+}
+
+.bg-brand-yellow {
+  background-color: #E4E4E0 !important;
+  color: #1A1A1A !important;
+}
+.text-brand-yellow {
+  color: #1A1A1A !important;
+}
+
+.bg-brand-neon {
+  background-color: #DCDCD8 !important;
+  color: #1A1A1A !important;
+}
+.text-brand-neon {
+  color: #1A1A1A !important;
+}
+
+/* Ensure SVG icons have good contrast */
+.bg-brand-pink svg,
+.bg-black svg,
+.bg-brand-pink .lucide,
+.bg-black .lucide {
+  color: #F5F5F0 !important;
+}
+
+/* Editorial Double Borders style */
+.editorial-double-border {
+  border-top: 1px solid #1A1A1A;
+  border-bottom: 1px solid #1A1A1A;
+  padding: 4px 0;
+  margin: 8px 0;
+}

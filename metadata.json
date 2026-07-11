@@ -1,0 +1,6 @@
+{
+  "name": "JieJie & Uncle Cat Portfolio",
+  "description": "The official street-style interactive portfolio of illustration duo Jiejie & Uncle Cat, featuring comic readers, interactive cultural mini-games, and business collaborations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
